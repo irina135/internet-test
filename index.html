@@ -11,21 +11,21 @@
 </head>
 <body>
 <header>
-    <div class="container px-lg-0 py-lg-2 header-container">
+    <div class="container py-lg-2 header-container">
         <div class="row no-gutters justify-content-around">
-            <div class="col-sm-4 py-2 py-sm-2 py-lg-0 col-lg-2 header-column">
+            <div class="col-sm-4 py-2 py-sm-2 py-lg-0 col-md-2">
                 <div class="header-content">
                     nnn
                 </div>
                 <!--
                 <a href="https://placeholder.com"><img src="https://via.placeholder.com/150x90/red"></a>-->
             </div>
-            <div class="col-sm-8 py-2 py-sm-2 py-lg-0 col-lg-4 header-column">
+            <div class="col-sm-8 py-2 py-sm-2 py-lg-0 col-md-4">
                 <div class="header-content header-content-mg-right">
                     mmm
                 </div>
             </div>
-            <div class="col-sm-12 py-2 py-sm-2 py-lg-0 col-lg-6 header-column">
+            <div class="col-sm-12 py-2 py-sm-2 py-lg-0 col-md-6 header-column">
                 <div class="header-content header-content-mg-right header-content-mg-right-lg">
                     mmm
                 </div>
@@ -34,24 +34,42 @@
     </div>
 </header>
 <main>
-    <div class="container py-lg-2">
+    <div class="container py-2">
         <div class="row no-gutters justify-content-around">
-            <div class="col col-12 col-sm-auto main-column-left">
-                <div class="main-column-left-top">
+            <div class="col col-12 col-sm-auto main-column-left position-relative">
+                <div class="main-column-left-top position-absolute">
                 </div>
-                <div class="main-column-left-bottom">
+                <div class="main-column-left-bottom position-absolute">
                 </div>
             </div>
             <div class="col col-12 col-sm main-column-right">
-                <div class="main-img float-left">
+                <div class="row no-gutters">
+                    <div class="col-12 big">
+                    </div>
                 </div>
-                <div class="main-img float-left">
+                <div class="row">
+                    <div class="col-12 main-img-container">
+                        <div class="main-img float-left">
+                        </div>
+                        <div class="main-img float-left">
+                        </div>
+                        <div class="main-img float-left">
+                        </div>
+                        <div class="main-img float-left">
+                        </div>
+                        <div class="main-img float-left">
+                        </div>
+                    </div>
                 </div>
-                <div class="main-img float-left">
-                </div>
-                <div class="main-img float-left">
-                </div>
-                <div class="main-img float-left">
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-6">
+                        <div class="main-column-right-end-content-margin">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="main-column-right-end-content">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,9 +80,9 @@
 <script src="vendors/jquery/dist/jquery.min.js"></script>
 <script src="vendors/pixlayout/jquery.pixlayout.min.js"></script>
 <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
         $('#header-img-navicon').click(function(event) {
