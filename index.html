@@ -32,10 +32,10 @@
     </div>
 </header>
 <main>
-    <div class="container py-2">
+    <div class="container py-2 main-container">
         <div class="row no-gutters justify-content-around">
             <div class="col col-12 col-sm-auto main-column-left position-relative">
-                <div class="main-column-left-top position-absolute background-1">
+                <div class="main-column-left-top background-1">
                 </div>
                 <div class="main-column-left-bottom position-absolute content-img">
                     <img src="img/project_organica.jpg" class="main-img-img">
@@ -43,30 +43,39 @@
             </div>
             <div class="col col-12 col-sm main-column-right">
                 <div class="row no-gutters">
-                    <div class="col-12 big background-2">
+                    <div class="col-12">
+                        <div class="big background-2">
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row no-gutters hhh">
                     <div class="col-12 main-img-container">
                         <div class="main-img float-left">
+                            <img src="img/main-img1.png">
                         </div>
                         <div class="main-img float-left">
+                            <img src="img/main-img2.jpg">
                         </div>
                         <div class="main-img float-left">
+                            <img src="img/main-img3.png">
                         </div>
                         <div class="main-img float-left">
+                            <img src="img/main-img4.png">
                         </div>
                         <div class="main-img float-left">
-                        </div>
-                         <div class="main-img float-left">
-                        </div>
-                        <div class="main-img float-left">
+                            <img src="img/main-img5.jpg">
                         </div>
                         <div class="main-img float-left">
+                            <img src="img/main-img6.jpg">
                         </div>
                         <div class="main-img float-left">
+                            <img src="img/main-img7.png">
                         </div>
                         <div class="main-img float-left">
+                            <img src="img/main-img8.jpg">
+                        </div>
+                        <div class="main-img float-left">
+                            <img src="img/main-img9.jpg">
                         </div>
                     </div>
                 </div>
@@ -111,8 +120,6 @@
         </div>
     </div>
 </footer>
-
-
 <script src="vendors/jquery/dist/jquery.min.js"></script>
 <script src="vendors/pixlayout/jquery.pixlayout.min.js"></script>
 <script
@@ -121,13 +128,9 @@
         crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
-        $('#header-img-navicon').click(function(event) {
-            $('#header-mobile-opacity').toggleClass('header-opacity');
-            $('#header-mobile-menu').toggleClass('header-mobile-display-none');
-            $('#header-img-none').toggleClass('header-img-opacity')
+        $('.main-img').click(function(event) {
+            $(this).toggleClass('header-opacity');
         });
-
-
     })
 </script>
 </body>
