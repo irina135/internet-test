@@ -51,7 +51,13 @@
                 <div class="row no-gutters hhh">
                     <div class="col-12 main-img-container">
                         <div class="main-img float-left">
-                            <img src="img/main-img1.png">
+                            <a href="#openModal"><img src="img/main-img1.png"></a>
+                        </div>
+                        <div id="openModal" class="modalDialog">
+                            <div>
+                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <img src="img/main-img1.png">
+                            </div>
                         </div>
                         <div class="main-img float-left">
                             <img src="img/main-img2.jpg">
@@ -127,10 +133,13 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function () {
-        $('.main-img').click(function(event) {
-            $(this).toggleClass('header-opacity');
-        });
+      $(document).ready(function () {
+       $('.main-img').click(function (event) {
+           $('.main-container').addClass('body-modal');
+       });
+       $('.close').click(function (event) {
+           $('.main-container').addClass('body-modal-none');
+       })
     })
 </script>
 </body>
