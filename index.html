@@ -55,7 +55,7 @@
                         </div>
                         <div id="openModal" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close1" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img1.png">
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                         </div>
                         <div id="openModa2" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close2" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img2.jpg">
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                         </div>
                         <div id="openModa3" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close3" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img3.png">
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                         </div>
                         <div id="openModa4" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close4" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img4.png">
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                         </div>
                         <div id="openModa5" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close5" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img5.jpg">
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                         </div>
                         <div id="openModa6" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close6" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img6.jpg">
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                         </div>
                         <div id="openModa7" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close7" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img7.png">
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                         </div>
                         <div id="openModa8" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close8" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img8.jpg">
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                         </div>
                         <div id="openModa9" class="modalDialog">
                             <div>
-                                <a href="#close" title="Закрыть" class="close">X</a>
+                                <a href="#close9" title="Закрыть" class="close">X</a>
                                 <img src="img/main-img9.jpg">
                             </div>
                         </div>
@@ -183,11 +183,14 @@
 <script>
       $(document).ready(function () {
        $('.main-img').click(function (event) {
-           $('.main-container').addClass('body-modal');
+           $('.container').addClass('body-modal');
        });
        $('.close').click(function (event) {
-           $('.main-container').addClass('body-modal-none');
-       })
+           $('.container').removeClass('body-modal')
+       });
+       var  ff = document.getElementById('openModa2');
+       var x = ff.length;
+       alert(x);
     })
 </script>
 </body>
