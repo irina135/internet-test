@@ -134,6 +134,11 @@ a {
     justify-content: space-between;
   }
 }
+@media (max-width: 576px) {
+  .main-img-container {
+    justify-content: center;
+  }
+}
 .hhh {
   margin-top: 15px;
 }
@@ -195,13 +200,27 @@ a {
 }
 .modalDialog {
   position: fixed;
-  top: 25%;
-  left: 25%;
-  right: 25%;
-  bottom: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
   z-index: 999;
   display: none;
   pointer-events: none;
+}
+@media (max-width: 576px) {
+  .modalDialog {
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+}
+.modalDialog img {
+  width: 500px;
+}
+@media (max-width: 576px) {
+  .modalDialog img {
+    width: 300px;
+  }
 }
 .modalDialog:target {
   display: block;
